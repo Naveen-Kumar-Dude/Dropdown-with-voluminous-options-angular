@@ -1,0 +1,77 @@
+<div class="main">
+    <div class="heading">
+        <span class="main-header">Dropdown implementation code</span>
+        <span class="home-icon">
+            <mat-icon (click)="goHome()" class="pointer-cursor" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="home"></mat-icon>
+        </span>
+    </div>
+    <div class="content">
+        <div class="content-section padding-1-rem">
+            <span class="inner-heading">PrimeNG Dropdown</span>
+            <div class="content-description padding-1-rem">
+                <div class="description padding-1-rem">
+                    VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data
+                    in the viewport at any time. When dealing with huge number of options, it is suggested to enable
+                    VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to
+                    true and defining virtualScrollItemSize to specify the height of an item.
+                </div>
+                <div class="code padding-1-rem">
+                    <code class="pre-white-space font-size-16">
+                        {{primeNGHtmlCode}}
+                      </code>
+                </div>
+            </div>
+        </div>
+        <div class="content-section padding-1-rem">
+            <span class="inner-heading">Default Dropdown</span>
+            <div class="content-description padding-1-rem">
+                <div class="description padding-1-rem">
+                    To implement a Dropdown using Angular material, we need to add the required material tags - "mat-form-field" tag in which we define
+                    "mat-label" tag to display required label and "mat-select" tag to display a dropdown and "mat-option" tag to display the required options in a dropdown.<br><br>
+                    Using "infiniteScroll" event which triggers on scroll action of user over the dropdown options, we can implement lazy loading to add next set of options according to the given limit
+                    "msInfiniteScroll" directive is required to trigger the "infiniteScroll" event when it reaches the end of dropdown options.
+
+                </div>
+                <div class="code padding-1-rem">
+                    <code class="pre-white-space font-size-16">
+                        {{default_DropDown_Html_Code}}
+                    </code>
+                </div>
+            </div>
+            <div class="content-description padding-1-rem">
+                <div class="description padding-1-rem">
+                   Here we are defining an array with 100 values and setting limit to 10 which will be loaded initially 
+                   and when the scrollbar reaches the end, the next set of values will be added until all the values of defined array are displayed based on the limit.<br><br>
+                   getNextSetOfOptions() is a method which gets invoked on scroll that displays next set of options.<br><br>
+                   In ngOnInit() life cycle hook, we define all the options in the dropdown and calls the getNextSetOfOptions() method to initialize first set of options.
+
+
+                </div>
+                <div class="code padding-1-rem">
+                    <code class="pre-white-space font-size-16">
+                        {{default_dropDown_typeScript_Code}}
+                    </code>
+                </div>
+            </div>
+            <div class="content-description padding-1-rem">
+                <div class="description width-99 module-desc">
+                    It is necessary to import <span>MatSelectInfiniteScrollModule</span> module to make infiniteScroll event work and to add msInfiniteScroll directive to the drop down.
+                    Other modules used to implement drop downs of primeNg and Material are as follows:
+                    <span>VirtualScrollerModule</span>
+                    <span>DropdownModule, </span>
+                    <span>ScrollerModule, </span>
+                    <span>ScrollPanelModule, </span>
+                    <span>ScrollTopModule, </span>
+                    <span>MatButtonModule, </span>
+                    <span>MatSelectModule, </span>
+                    <span>MatFormFieldModule, </span>
+                    <span>MatIconModule.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    Designed and Developed by <a href="https://in.linkedin.com/in/naveen-kumar-dude-7b16131b9" target="_blank">@Naveen Kumar Dude</a>
+</div>

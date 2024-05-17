@@ -1,0 +1,54 @@
+<div class="header centered-flex-class">
+    <span class="main-header">Handling Dropdown Voluminous options</span>
+    <span class="main-button"><button mat-raised-button (click)="goToCode()">Go to Code</button></span>
+</div>
+<div class="main space-between-flex-class">
+    <div class="drop-downs-section">
+        <!-- Problem Statement -->
+        <div class="problem-statement">
+            <span>
+                If there is requirement of displaying a dropdown with tons of options in a web page.
+                We can't load all the options at a time because it is going to take a lot of time which is very bad
+                experience for user of the site.<br>
+                Below are the two different ways which we can achieve the above requirement:
+
+            </span>
+        </div>
+        <div class="drop-downs">
+            <!-- Prime ng dropdown -->
+            <div class="drop-down-section margin-b-5rem">
+                <span class="dropDown-name">PrimeNG is a collection of rich UI components for Angular provided solution
+                    by implementing virtualScroll as shown:</span>
+                <p-dropdown [options]="dropDownOptions" placeholder="Select Item" [virtualScroll]="true"
+                    [virtualScrollItemSize]="5" [style]="{'width':'13rem'}"></p-dropdown>
+            </div>
+
+            <!-- Default drop down -->
+            <div class="drop-down-section">
+                <span class="dropDown-name">Whereas this angular material dropdown has solution for same problem implemented in
+                    manual way.</span>
+                <mat-form-field>
+                    <mat-label>Select Option</mat-label>
+                    <mat-select placeholder="Select an item" (infiniteScroll)="getNextSetOfOptions()"
+                        [complete]="currentOptions === dropDownOptions.length" msInfiniteScroll>
+                        <!-- listens to the event and call your load data function -->
+                        <mat-option *ngFor="let option of optionsObservable | async" [value]="option">{{option}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <!-- details section starts here -->
+    <div class="drop-downs-details-section">
+        <div class="details">
+            <app-dropdown-all [name]="'PrimeNG Dropdown'" [count]="dropDownOptions.length"></app-dropdown-all>
+        </div>
+        <div class="details">
+            <app-dropdown-all [name]="'Normal Dropdown'" [count]="dropDownOptions.length"></app-dropdown-all>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    Designed and Developed by <a href="https://in.linkedin.com/in/naveen-kumar-dude-7b16131b9" target="_blank">@Naveen Kumar Dude</a>
+</div>

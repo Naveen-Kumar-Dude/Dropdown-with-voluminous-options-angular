@@ -1,0 +1,100 @@
+.main{
+    width: 100%;
+    height: 86%;
+    padding: 1rem;
+    background-color:  #ADD8E6
+}
+
+.header {
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    font-size: larger;
+    width: 100%;
+    height: 10%;
+    background-color: lightslategrey;
+    font-weight: bold;
+}
+
+.centered-flex-class {
+    display: flex;
+    justify-content: space-between; /* TODO: change this */
+}
+
+.space-between-flex-class {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    margin: 1.5rem;
+}
+
+.drop-downs-section {
+    width: 70%;
+    border-right: white solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drop-downs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.drop-down-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.drop-downs-details-section {
+    width: 30%;
+}
+
+
+.dropDown-name {
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: black;
+    font-size: x-large;
+}
+.main-button{
+    width:10%;
+    display: flex;
+    align-items: center;
+}
+
+.problem-statement {
+    margin: 4rem 0;
+}
+
+.margin-b-5rem {
+    margin-bottom: 5rem;
+}
+
+.p-dropdown {
+    width: 13rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    height: 4%;
+    color: white;
+    background-color: lightslategrey ;
+    padding-right: 1rem;
+}
+
+a{
+    color:#ADD8E6;
+    padding-left: 4px;
+}
+

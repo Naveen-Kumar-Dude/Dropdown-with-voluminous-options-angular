@@ -1,0 +1,94 @@
+.heading {
+    height: 4rem;
+    color: black;
+    background-color: lightslategrey;
+    display: flex;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%; 
+    font-size: x-large;
+}
+.home-icon {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #ADD8E6;
+}
+.content-section {
+    margin: 1rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.content-description {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    width: 49%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.code {
+    width: 49%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.padding-1-rem {
+    padding: 1rem;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.inner-heading {
+  font-size: large;  
+}
+
+.pre-white-space {
+    white-space: pre;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.width-99 {
+    width: 99%;
+}
+
+.module-desc {
+    padding: 0.7rem;
+}
+
+span {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: lightslategrey ;
+    padding-right: 1rem;
+}
+
+a{
+    color:#ADD8E6;
+    padding-left: 4px;
+}
